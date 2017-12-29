@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "name": "Better Reddit Comments",
+  "version": "0.01",
+  "author": "Justin Kolnick",
+
+  "description": "Only view 1 top level reddit comment thread at a time",
+
+  "content_scripts": [
+    {
+      "matches": ["https://*.reddit.com/*/comments/*"],
+      "js": ["my.js"]
+    }
+  ]
+}
